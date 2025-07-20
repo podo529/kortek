@@ -2,7 +2,7 @@
 
 #wrap header {
     position:fixed; top:0; z-index:500;
-    width:100%; box-shadow:0 1px 3px rgba(0,0,0,0.1);}
+    width:100%; box-shadow:0 1px 3px rgba(0,0,0,0.1); padding:0 260px;}
 #wrap header .header_bg {display:flex; justify-content:space-between; align-items:center;}
 #wrap header .header_bg h1 {width:137px;}
 #wrap header .header_bg h1 a {}
@@ -16,12 +16,14 @@
 #wrap header .header_bg nav .gnb li .lnb_depth {
     /* display:flex; flex-flow:column nowrap; gap:13px; */ padding:61px 0 40px;
     position:absolute; left:50%; transform:translateX(-50%); width:120px;
-    background:rgba(255,255,255,0.3); display:none;
+    display:none; color:#fff;
 }
 #wrap header .header_bg nav .gnb li .lnb_depth li {}
 #wrap header .header_bg nav .gnb li .lnb_depth li a {
-    color:#000; font-size:0.875rem; font-weight:300; margin-bottom:13px; display:inline-block;}
+    color:#fff; font-size:0.875rem; font-weight:300; margin-bottom:13px; display:inline-block;}
 #wrap header .header_bg nav .gnb > li .lnb_depth li a:hover {font-weight:500;}
-#wrap header .header_bg nav .gnb > li:hover .lnb_depth {display:inline-block;}
-#wrap header .header_bg .lang_btn {background:none;color:#fff;}
-#wrap header .header_bg .lang_btn option {}
+#wrap header .header_bg nav .gnb > li:hover .lnb_depth {display:inline-block}
+    #wrap header .header_bg .lang_btn {
+        background:url(../images/lang_btn.png) no-repeat 95% center; color:#fff; background-size:14px;
+        border:1px solid #fff; border-radius:13px; font-size:0.75rem; padding:5px 10px;}
+#wrap header .header_bg .lang_btn option {font-size:0.75rem;}

@@ -11,3 +11,60 @@ body {max-width:1920px;}
     font-size:5.25rem; font-family: "Racing Sans One", sans-serif;
     color:#0061B0; text-shadow:2px 2px 0 #fff; padding:10px 0 30px;
 }
+/* ===================================================1행 일상 */
+#wrap main .daily_life {padding:90px 0;}
+#wrap main .daily_life h2 {font-size:1.75rem; font-weight:500;}
+#wrap main .daily_life h2 em {color:#0061B0;}
+#wrap main .daily_life p {margin:30px 0 60px;}
+#wrap main .daily_life .life_container {display:flex; flex-flow:row nowrap; gap:10px; margin:0 auto; width:max-content;}
+#wrap main .daily_life .life_container .life_contain {width:190px; height:554px; border-radius:5px;}
+#wrap main .daily_life .life_container .life_bg {display:flex;flex-flow:column nowrap; justify-content:center; gap:20px; background-color:rgba(0,0,0,0.7); width:100%; height:100%;}
+#wrap main .daily_life .life_container .life_contain em {font-weight:500; font-size:1.5rem; color:#fff;}
+#wrap main .daily_life .life_container .life_contain span {color:#fff; display:none;}
+#wrap main .daily_life .life_container .life1 {background:url(../images/life001.jpg) no-repeat center / cover; width:800px;}
+#wrap main .daily_life .life_container .life2 {background:url(../images/life002.jpg) no-repeat center / cover;}
+#wrap main .daily_life .life_container .life3 {background:url(../images/life003.png) no-repeat center / cover;}
+#wrap main .daily_life .life_container .life4 {background:url(../images/life004.jpg) no-repeat center / cover;}
+#wrap main .daily_life .life_container .life_contain.active .life_bg {background-color:transparent;}
+#wrap main .daily_life .life_container .life_contain.active .life_bg span {display:inline;}
+/* =======================================================2행 기능 */
+#wrap main .key_features {padding:90px 0;}
+#wrap main .key_features a {}
+#wrap main .key_features a h2 {font-size:1.75rem;}
+#wrap main .key_features a h2 img {}
+#wrap main .key_features .swiper_key_features {}
+#wrap main .key_features .swiper_key_features .slide_wrap {}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide {width:400px; display:flex; flex-flow:column nowrap;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide img {
+    width:100%; height:400px; object-fit:contain;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem;}
+/* ==========================================================3행 글로벌 */
+#wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0;}
+#wrap main .global_network a {}
+#wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500;}
+#wrap main .global_network a h2 img {}
+#wrap main .global_network p {color:#fff; line-height:150%; font-size:1.125rem;}
+#wrap main .global_network p em {color:#fff; font-weight:700;}
+/* ==========================================================4행 제품 */
+#wrap main .product {}
+#wrap main .product .product_left {}
+#wrap main .product .product_left .left_top {}
+#wrap main .product .product_left .left_top a {}
+#wrap main .product .product_left .left_top a h2 {}
+#wrap main .product .product_left .left_top a h2 img {}
+#wrap main .product .left_bottom_right {}
+#wrap main .product .left_bottom_right .prev_btn {}
+#wrap main .product .left_bottom_right .next_btn {}
+#wrap main .product .left_bottom_right p {}
+#wrap main .product .left_bottom_right .swiper_key_features {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide span {}
+/* ==================================================5행 투자,문의 */
+#wrap main .customer {}
+#wrap main .customer .investment {}
+#wrap main .customer .customer_inquiry {}
+#wrap main .customer .text {}
+#wrap main .customer .text h3 {}
+#wrap main .customer .text h3 p {}
