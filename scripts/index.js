@@ -15,18 +15,20 @@ lifeContainer.forEach((obj,idx)=>{
         lifeSpan[idx].style.display = 'inline';
         obj.style.width = '800px';
     });
-    obj.addEventListener('mouseleave',()=>{
+    /* obj.addEventListener('mouseleave',()=>{
         lifeBg[idx].style.backgroundColor = 'rgba(0,0,0,0.7)';
         lifeSpan[idx].style.display = 'none';
         obj.style.width = '190px';
-    })
+    }) */
 })
 
 //2행 기능
 const keySwiper = new Swiper('.swiper_key_features',{
     slidesPerView:4.5,
     spaceBetween:60,
-    autoplay:{delay:2000},
+    autoplay:{delay:2000,
+        disableOnInteraction:true,
+    },
     loop:true,
     direction:'horizontal',
     speed:5000,
@@ -34,6 +36,6 @@ const keySwiper = new Swiper('.swiper_key_features',{
 /* keySwiper.addEventListener('mouseenter',()=>{
     keySwiper.autoplay.stop(); 
 }) */
-document.getElementsByClassName('.swiper_key_features',()=>{
+/* document.getElementsByClassName('.swiper_key_features .slide',()=>{
     keySwiper.autoplay.stop();
-})
+}) */

@@ -1,16 +1,17 @@
-body * {transition:all 0.2s;}
+body * {transition:all 0.5s;}
 body {max-width:1920px;}
 #wrap {}
 #wrap main {text-align:center;}
 /* ----------------------------------------------배너 */
 #wrap main .bnr_bg {
-    background:url(../images/bnr.jpg) no-repeat center / cover; width:100%; height:963px; display:block; padding-top:420px;}
+    background:url(../images/bnr.jpg) no-repeat center / cover; width:100%; height:963px; display:block; padding-top:420px; position:relative;}
 #wrap main .bnr_bg p:first-child {color:#fff; font-size:2rem; font-weight:500;}
-#wrap main .bnr_bg p:last-child {color:#fff; font-size:1.125rem;}
+#wrap main .bnr_bg p {color:#fff; font-size:1.125rem;}
 #wrap main .bnr_bg h1 {
     font-size:5.25rem; font-family: "Racing Sans One", sans-serif;
     color:#0061B0; text-shadow:2px 2px 0 #fff; padding:10px 0 30px;
 }
+#wrap main .bnr_bg em {font-size:0.875rem; font-weight:600; color:#fff; position:absolute; bottom:97px; animation:scroll_ani 1.5s linear infinite alternate;}
 /* ===================================================1행 일상 */
 #wrap main .daily_life {padding:90px 0;}
 #wrap main .daily_life h2 {font-size:1.75rem; font-weight:500;}
@@ -30,7 +31,7 @@ body {max-width:1920px;}
 /* =======================================================2행 기능 */
 #wrap main .key_features {padding:90px 0;}
 #wrap main .key_features a {}
-#wrap main .key_features a h2 {font-size:1.75rem;}
+#wrap main .key_features a h2 {font-size:1.75rem; margin-bottom:60px;}
 #wrap main .key_features a h2 img {}
 #wrap main .key_features .swiper_key_features {}
 #wrap main .key_features .swiper_key_features .slide_wrap {}
@@ -40,9 +41,9 @@ body {max-width:1920px;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem;}
 /* ==========================================================3행 글로벌 */
-#wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0;}
+#wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0; margin:80px 0;}
 #wrap main .global_network a {}
-#wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500;}
+#wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500; margin-bottom:30px;}
 #wrap main .global_network a h2 img {}
 #wrap main .global_network p {color:#fff; line-height:150%; font-size:1.125rem;}
 #wrap main .global_network p em {color:#fff; font-weight:700;}
@@ -68,3 +69,9 @@ body {max-width:1920px;}
 #wrap main .customer .text {}
 #wrap main .customer .text h3 {}
 #wrap main .customer .text h3 p {}
+
+
+@keyframes scroll_ani {
+    0% {bottom:97px;}
+    100% {bottom:80px;}
+}
