@@ -21,7 +21,7 @@ body {max-width:1920px;}
 #wrap main .daily_life .life_container .life_contain {width:190px; height:554px; border-radius:5px;}
 #wrap main .daily_life .life_container .life_bg {display:flex;flex-flow:column nowrap; justify-content:center; gap:20px; background-color:rgba(0,0,0,0.7); width:100%; height:100%;}
 #wrap main .daily_life .life_container .life_contain em {font-weight:500; font-size:1.5rem; color:#fff;}
-#wrap main .daily_life .life_container .life_contain span {color:#fff; display:none;}
+#wrap main .daily_life .life_container .life_contain span {color:#fff; display:none; line-height:130%;}
 #wrap main .daily_life .life_container .life1 {background:url(../images/life001.jpg) no-repeat center / cover; width:800px;}
 #wrap main .daily_life .life_container .life2 {background:url(../images/life002.jpg) no-repeat center / cover;}
 #wrap main .daily_life .life_container .life3 {background:url(../images/life003.png) no-repeat center / cover;}
@@ -52,16 +52,24 @@ body {max-width:1920px;}
 #wrap main .product .product_left {}
 #wrap main .product .product_left .left_top {}
 #wrap main .product .product_left .left_top a {}
-#wrap main .product .product_left .left_top a h2 {}
+#wrap main .product .product_left .left_top a h2 {font-size:1.75rem; font-weight:500;}
 #wrap main .product .product_left .left_top a h2 img {}
+#wrap main .product .product_left .left_top span {line-height:130%;}
 #wrap main .product .left_bottom_right {}
 #wrap main .product .left_bottom_right .prev_btn {}
 #wrap main .product .left_bottom_right .next_btn {}
-#wrap main .product .left_bottom_right p {}
+#wrap main .product .left_bottom_right p {line-height:130%;}
 #wrap main .product .left_bottom_right .swiper_key_features {}
 #wrap main .product .left_bottom_right .swiper_key_features .slide_wrap {}
-#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide {}
-#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide span {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display1 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display2 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display3 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display4 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display5 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display6 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .display7 {}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide {width:290px; height:400px;}
+#wrap main .product .left_bottom_right .swiper_key_features .slide_wrap .slide span {font-size:1.5rem; margin:0 auto; }
 /* ==================================================5행 투자,문의 */
 #wrap main .customer {}
 #wrap main .customer .investment {}
