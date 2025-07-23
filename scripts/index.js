@@ -39,3 +39,16 @@ const keySwiper = new Swiper('.swiper_key_features',{
 /* document.getElementsByClassName('.swiper_key_features .slide',()=>{
     keySwiper.autoplay.stop();
 }) */
+
+
+//4행 제품
+const productSwiper = new Swiper('.swiper_product',{
+    slidesPerView:3.5,
+    spaceBetween:20,
+    loop:true,
+    direction:'horizontal',
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+})
