@@ -7,7 +7,10 @@ console.log(lifeBg)
 lifeContainer.forEach((obj,idx)=>{
     obj.addEventListener('mouseenter',()=>{
         lifeContainer.forEach((life)=>{
-            for(let i of lifeBg){i.style.backgroundColor = 'rgba(0,0,0,0.7)'};
+            for(let i of lifeBg){
+                i.style.backgroundColor = 'rgba(0,0,0,0.7)'
+                i.style.borderRadius = '5px';
+            };
             for(let i of lifeSpan){i.style.display = 'none';};
             life.style.width = '190px';
         });

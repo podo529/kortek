@@ -84,7 +84,7 @@ body {max-width:1920px;}
 #wrap main .customer .investment {background:url(../images/customer001.jpg)no-repeat center / cover;}
 #wrap main .customer .customer_inquiry {background:url(../images/customer002.jpg)no-repeat center / cover;}
 #wrap main .customer a:hover .bg {background-color:rgba(0,0,0,0.4);}
-#wrap main .customer .text {border:5px solid #fff;}
+#wrap main .customer .text {border:5px solid #fff; padding:169px 0;}
 #wrap main .customer .text h3 {color:#fff; font-size:1.75rem; font-weight:500; margin-bottom:30px;}
 #wrap main .customer .text p {color:#fff; font-size:1.125rem; line-height:150%;}
 
