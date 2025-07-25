@@ -22,8 +22,23 @@
 #wrap header .header_bg nav .gnb li .lnb_depth li a {
     color:#fff; font-size:0.875rem; font-weight:300; margin-bottom:13px; display:inline-block;}
 #wrap header .header_bg nav .gnb > li .lnb_depth li a:hover {font-weight:500;}
-#wrap header .header_bg nav .gnb > li:hover .lnb_depth {display:inline-block}
+#wrap header .header_bg nav .gnb > li:hover .lnb_depth {display:inline-block;}
     #wrap header .header_bg .lang_btn {
-        background:url(../images/lang_btn.png) no-repeat 95% center; color:#fff; background-size:14px;
-        border:1px solid #fff; border-radius:13px; font-size:0.75rem; padding:5px 10px;}
+        background:url(../images/lang_btn.png) no-repeat 93% center; color:#fff; background-size:14px;
+        border:1px solid #fff; border-radius:13px; font-size:0.75rem; padding:5px 10px; width:60px;}
 #wrap header .header_bg .lang_btn option {font-size:0.75rem;}
+/* -----------------------------------footer */
+#wrap footer {padding:60px 260px; display:flex; flex-flow:row nowrap; justify-content:space-between;}
+#wrap footer .left {display:flex; flex-flow:column nowrap; gap:30px;}
+#wrap footer .left .left_top {}
+#wrap footer .left .left_top a {font-size:0.938rem; font-weight:500; margin-right:15px;}
+#wrap footer .left .left_bottom {}
+#wrap footer .left .left_bottom address {font-size:0.813rem; font-weight:300; margin-bottom:15px;}
+#wrap footer .left .left_bottom p {font-size:0.813rem; font-weight:300; margin-bottom:15px;}
+#wrap footer .right {display:flex; flex-flow:column nowrap; gap:30px;}
+#wrap footer .right .site {border:1px solid #0061B0; width:193px; padding:10px;
+    background:url(../images/site_btn.png) no-repeat 165px center / 15px;
+}
+#wrap footer .right .site option {font-size:0.938rem; font-weight:500;}
+#wrap footer .right a {width:190px; display:inline-block;}
+#wrap footer .right a img {width:100%;}

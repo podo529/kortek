@@ -30,9 +30,9 @@ body {max-width:1920px;}
 #wrap main .daily_life .life_container .life_contain.active .life_bg span {display:inline;}
 /* =======================================================2행 기능 */
 #wrap main .key_features {padding:90px 0;}
-#wrap main .key_features a {}
+#wrap main .key_features a {position:relative;}
 #wrap main .key_features a h2 {font-size:1.75rem; margin-bottom:60px;}
-#wrap main .key_features a h2 img {}
+#wrap main .key_features a h2 img {width:24px; position:absolute; bottom:0;}
 #wrap main .key_features .swiper_key_features {}
 #wrap main .key_features .swiper_key_features .slide_wrap {}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide {width:400px; display:flex; flex-flow:column nowrap;}
@@ -42,9 +42,9 @@ body {max-width:1920px;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem;}
 /* ==========================================================3행 글로벌 */
 #wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0; margin:80px 0;}
-#wrap main .global_network a {}
+#wrap main .global_network a {position:relative;}
 #wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500; margin-bottom:30px;}
-#wrap main .global_network a h2 img {}
+#wrap main .global_network a h2 img {width:24px; position:absolute; bottom:0;}
 #wrap main .global_network p {color:#fff; line-height:150%; font-size:1.125rem;}
 #wrap main .global_network p em {color:#fff; font-weight:700;}
 /* ==========================================================4행 제품 */
@@ -80,11 +80,12 @@ body {max-width:1920px;}
 /* ==================================================5행 투자,문의 */
 #wrap main .customer {display:flex;}
 #wrap main .customer a {width:calc(100% / 2); height:800px;}
-#wrap main .customer a .bg {width:100%; height:100%; padding:175px 255px;}
+#wrap main .customer a .bg {width:100%; height:100%; position:relative;}
 #wrap main .customer .investment {background:url(../images/customer001.jpg)no-repeat center / cover;}
 #wrap main .customer .customer_inquiry {background:url(../images/customer002.jpg)no-repeat center / cover;}
 #wrap main .customer a:hover .bg {background-color:rgba(0,0,0,0.4);}
-#wrap main .customer .text {border:5px solid #fff; padding:169px 0;}
+#wrap main .customer .text {border:5px solid #fff; padding:169px 0; width:450px; height:450px;  position:absolute;top:50%; left:50%; transform:translate(-50%, -50%);}
+#wrap main .customer a:hover .text {width:470px; height:470px;}
 #wrap main .customer .text h3 {color:#fff; font-size:1.75rem; font-weight:500; margin-bottom:30px;}
 #wrap main .customer .text p {color:#fff; font-size:1.125rem; line-height:150%;}
 
