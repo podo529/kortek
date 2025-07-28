@@ -1,5 +1,5 @@
-body * {transition:all 1s;}
-body {max-width:1920px;}
+body * {transition:all 0.3s;}
+body {min-width:1920px;}
 #wrap {}
 #wrap main {text-align:center;}
 /* ----------------------------------------------배너 */
@@ -52,8 +52,8 @@ body {max-width:1920px;}
 #wrap main .product .product_left {text-align:left;}
 #wrap main .product .product_left .left_top {}
 #wrap main .product .product_left .left_top a {}
-#wrap main .product .product_left .left_top a h2 {font-size:1.75rem; font-weight:500;}
-#wrap main .product .product_left .left_top a h2 img {}
+#wrap main .product .product_left .left_top a h2 {font-size:1.75rem; font-weight:500; position:relative;}
+#wrap main .product .product_left .left_top a h2 img {width:24px; position:absolute; bottom:0;}
 #wrap main .product .product_left .left_top span {
     line-height:130%; margin:20px 0 50px; display:inline-block;}
 #wrap main .product .left_bottom_right { position:relative;}
