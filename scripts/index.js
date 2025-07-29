@@ -13,40 +13,89 @@ lifeContainer.forEach((obj,idx)=>{
                 i.style.borderRadius = '5px';
             };
             for(let i of lifeSpan){i.style.display = 'none';};
-            life.style.width = '190px';
+            life.style.width = 'calc((100% - 30px) / 7)';
         });
         lifeBg[idx].style.backgroundColor = 'transparent';
         lifeSpan[idx].style.display = 'inline';
-        obj.style.width = '800px';
-    });
+        obj.style.width = 'calc(((100% - 30px) / 7) * 4)';
+    })
     /* obj.addEventListener('mouseleave',()=>{
         lifeBg[idx].style.backgroundColor = 'rgba(0,0,0,0.7)';
         lifeSpan[idx].style.display = 'none';
         obj.style.width = '190px';
     }) */
 })
-
 //2행 기능
-const keySwiper = new Swiper('.swiper_key_features',{
+/* keySwiper = new Swiper('.swiper_key_features',{
     slidesPerView:4.5,
     spaceBetween:60,
     autoplay:{delay:1000,
-        /* disableOnInteraction:true, */
+        disableOnInteraction:true,
     },
     loop:true,
     direction:'horizontal',
     speed:5000,
-});
-/* keySwiper.addEventListener('mouseenter',()=>{
-    keySwiper.autoplay.stop(); 
-}) */
-/* document.getElementsByClassName('.swiper_key_features .slide',()=>{
-    keySwiper.autoplay.stop();
-}) */
+}); */
+let keySwiper;
+function initializeSwiper() {
+    if (window.innerWidth > 849 && !keySwiper) {
+        keySwiper = new Swiper('.swiper_key_features', {
+            slidesPerView: 4.5,
+            spaceBetween: 60,
+            autoplay: { delay: 1000 },
+            loop: true,
+            direction: 'horizontal',
+            speed: 5000,
+        });
+    }
+}
+function destroySwiper() {
+    if (window.innerWidth <= 849 && keySwiper) {
+        keySwiper.destroy(true, true);
+        keySwiper = null;  // Swiper 인스턴스를 null로 설정
+    }
+}
+// 화면 크기에 맞게 Swiper를 초기화하거나 파괴
+function handleResize() {
+    if (window.innerWidth <= 849) {
+        destroySwiper();
+    } else {
+        initializeSwiper();
+    }
+}
+// 처음 페이지 로딩 시 실행
+handleResize();
+// 윈도우 사이즈 변경 시마다 실행
+window.addEventListener('resize', handleResize);
+
 
 
 //4행 제품
-const productSwiper = new Swiper('.swiper_product',{
+let productSwiper;
+/* if (window.innerWidth <= 1249) {
+    productSwiper = new Swiper('.swiper_product',{
+        slidesPerView:3.5,
+        spaceBetween:20,
+        loop:true,
+        direction:'horizontal',
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    })
+}else{
+    productSwiper = new Swiper('.swiper_product',{
+        slidesPerView:2.5,
+        spaceBetween:20,
+        loop:true,
+        direction:'horizontal',
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+    })
+} */
+productSwiper = new Swiper('.swiper_product',{
     slidesPerView:3.5,
     spaceBetween:20,
     loop:true,
@@ -55,33 +104,4 @@ const productSwiper = new Swiper('.swiper_product',{
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
-})
-
-//header 스크롤
-const headerBg = document.querySelector('header');
-const aTag = document.querySelectorAll('.gnb li a');
-const lnbDepth = document.querySelectorAll('.lnb_depth');
-const langBtn = document.querySelector('.lang_btn');
-//console.log(wrap,headerBg,aTag,lnbDepth)
-
-window.addEventListener('scroll',()=>{
-    if(window.scrollY > 100){
-        headerBg.style.backgroundColor = '#fff';
-        aTag.forEach((obj, idx)=>{
-            obj.style.color = '#000';
-        });
-        lnbDepth.forEach((obj, idx)=>{
-            obj.style.background = '#fff'
-        });
-        langBtn.style.filter = 'brightness(0)';
-    }else{
-        headerBg.style.backgroundColor = 'transparent';
-        aTag.forEach((obj, idx)=>{
-            obj.style.color = '#fff';
-        })
-        lnbDepth.forEach((obj, idx)=>{
-            obj.style.background = 'linear-gradient(0deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%)'
-        });
-        langBtn.style.filter = 'brightness(1)';
-    }
 })
