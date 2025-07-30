@@ -42,7 +42,7 @@ window.addEventListener('resize', () => {
         if (window.innerWidth <= 849) {
             obj.style.width = '100%';
             obj.style.height = '130px';
-        } else if(849 < window.innerWidth <= 1249) {
+        } else if(849 < window.innerWidth <= 1400) {
             obj.style.width = 'calc((100% - 30px) / 7)';
             obj.style.height = '450px';
         }else{
@@ -68,7 +68,7 @@ const keySwiper = new Swiper('.swiper_key_features', {
 
     // 반응형 breakpoints
     breakpoints: {
-        1249:{
+        1400:{
             slidesPerView: 4.5,
             spaceBetween: 60
         },
