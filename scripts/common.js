@@ -41,11 +41,17 @@ window.addEventListener('scroll',()=>{
 
 //모바일 nav
 menuBtn.addEventListener('click',()=>{
-    mobileNav.style.display = 'block';
-    menuWrap.style.display = 'block';
+    if(mobileNav.style.display == 'block'){
+        mobileNav.style.display = 'none';
+        menuWrap.style.display = 'none';
+    }else{
+        mobileNav.style.display = 'block';
+        menuWrap.style.display = 'block';
+    }
 })
 menuWrap.addEventListener('click',()=>{
     mobileNav.style.display = 'none';
+    menuWrap.style.display = 'none';
 })
 for(let i=0; i<mobileGnb.length; i++){
     mobileLnb[i].style.display = 'none';
@@ -58,7 +64,7 @@ for(let i=0; i<mobileGnb.length; i++){
             for(let j=0; j<mobileGnb.length; j++){
                 mobileLnb[j].style.display = 'none';
                 mobileGnbBtn[j].src = './images/gnb_down_btn.png';
-                mobileGnbText[i].style.color = '#000';
+                mobileGnbText[j].style.color = '#000';
             }
             mobileLnb[i].style.display = 'block';
             mobileGnbBtn[i].src = './images/gnb_up_btn.png';

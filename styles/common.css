@@ -59,7 +59,7 @@
 #wrap footer .left .left_bottom p {font-size:0.813rem; font-weight:300; margin-bottom:15px;}
 #wrap footer .right {display:flex; flex-flow:column nowrap; gap:30px;}
 #wrap footer .right .site {border:1px solid #0061B0; width:193px; padding:10px;
-    background:url(../images/site_btn.png) no-repeat 165px center / 15px;
+    background:url(../images/site_btn.png) no-repeat 92% center / 15px;
 }
 #wrap footer .right .site option {font-size:0.938rem; font-weight:500;}
 #wrap footer .right a {width:190px; display:inline-block;}

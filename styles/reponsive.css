@@ -1,0 +1,113 @@
+/* 반응형 */
+@media screen and (max-width:1400px) {
+    /* header */
+    #wrap header {padding:0 80px;}
+    #wrap header .header_bg nav {display:none;}
+    #wrap header .header_bg .lang_and_mobile_wrap .lang_btn {height:24px;}
+    #wrap header .header_bg .lang_and_mobile_wrap .mobile_btn {display:block;}
+    /* 배너 */
+    #wrap main .bnr_bg {height:80vh;}
+    #wrap main .bnr_bg h1 {font-size:3.375rem; margin:7px 0 15px;}
+    #wrap main .bnr_bg p:first-child {font-size:1.5rem;}
+    #wrap main .bnr_bg p {font-size:1rem;}
+    #wrap main .bnr_bg em {display:none;}
+    /* 1행 일상 */
+    #wrap main .daily_life {padding:60px 80px;}
+    #wrap main .daily_life h2 {font-size:1.5rem;}
+    #wrap main .daily_life p {font-size:0.938rem;}
+    #wrap main .daily_life .life_container .life_contain {height:450px;}
+    /* 2행 기능 */
+    #wrap main .key_features {padding:60px 0;}
+    #wrap main .key_features a h2 {font-size:1.5rem; margin-bottom:30px;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide img {height:250px;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.125rem;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide span {font-size:0.813rem;}
+    /* 3행 글로벌 */
+    #wrap main .global_network {height:500px; padding:200px 0;}
+    /* 4행 제품 */
+    #wrap main .product {padding-left:80px; margin:90px 0 180px;}
+    #wrap main .product .product_left {text-align:center;}
+    #wrap main .product .left_bottom_right {display:flex; flex-flow:column nowrap; gap:100px;}
+    #wrap main .product .left_bottom_right p {
+        padding:45px; width:calc(100vw - 160px); text-align:right; height:400px;}
+    #wrap main .product .left_bottom_right .prev_btn {right:95px; top:68px;}
+    #wrap main .product .left_bottom_right .next_btn {right:45px; top:68px;}
+    #wrap main .product .left_bottom_right .swiper_product {width:calc(100vw - 160px); /* position:relative; */ left:-65px; bottom:-80px;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide {height:350px;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide span {
+        line-height:350px; font-size:1.25rem;}
+    /* 5행 투자, 문의 */
+    #wrap main .customer a {height:550px;}
+    #wrap main .customer a .bg .border {width:350px; height:350px;}
+    #wrap main .customer a:hover .bg .border {width:370px; height:370px;}
+    #wrap main .customer .text h3 {font-size:1.5rem;}
+    #wrap main .customer .text p{font-size:0.938rem;}
+    /* footer */
+    #wrap footer {padding:60px 80px;}
+    #wrap footer .left .left_top a {font-size:0.875rem; margin-right:12px;}
+    #wrap footer .left .left_bottom address {font-size:0.75rem;}
+    #wrap footer .left .left_bottom p {font-size:0.75rem;}
+    #wrap footer .right .site {font-size:0.875rem; width:150px;}
+    #wrap footer .right .site option {font-size:0.875rem;}
+    #wrap footer .right a {width:150px;}
+}
+
+@media screen and (max-width:849px) {
+    body {min-width:320px;}
+    /* header */
+    #wrap header {padding:0 15px;}
+    /* 배너 */
+    #wrap main .bnr_bg {height:60vh;}
+    #wrap main .bnr_bg h1 {font-size:2rem; margin:7px 0 15px;}
+    #wrap main .bnr_bg p:first-child {font-size:1rem;}
+    #wrap main .bnr_bg p {font-size:0.813rem;}
+    /* 1행 일상 */
+    #wrap main .daily_life {padding:60px 15px;}
+    #wrap main .daily_life h2 {font-size:1.125rem;}
+    #wrap main .daily_life p {font-size:0.813rem;}
+    #wrap main .daily_life .life_container {flex-flow:column nowrap;}
+    #wrap main .daily_life .life_container .life_bg {gap:10px;}
+    #wrap main .daily_life .life_container .life_contain {height:130px; width:100%;}
+    #wrap main .daily_life .life_container .life_contain em {font-size:1.125rem;}
+    #wrap main .daily_life .life_container .life_contain span {font-size:0.813rem;}
+    /* 2행 기능 */
+    #wrap main .key_features {padding:60px 0;}
+    #wrap main .key_features a h2 {font-size:1.125rem; margin-bottom:30px;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide img {height:250px;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:0.938rem; margin-top:10px;}
+    #wrap main .key_features .swiper_key_features .slide_wrap .slide span {display:none;}
+    /* 3행 글로벌 */
+    #wrap main .global_network {height:320px; padding:120px 0;}
+    #wrap main .global_network a h2 {font-size:1.5rem; margin-bottom:15px;}
+    #wrap main .global_network p {font-size:0.813rem;}
+    /* 4행 제품 */
+    #wrap main .product {padding-left:15px; margin:60px 0;}
+    #wrap main .product .product_left {text-align:center;}
+    #wrap main .product .product_left .left_top span {margin:10px 0 20px;}
+    #wrap main .product .left_bottom_right {gap:30px;}
+    #wrap main .product .left_bottom_right img {display:none;}
+    #wrap main .product .left_bottom_right p {
+        padding:0; width:100%; text-align:center; height:max-content; color:#000; background-color:transparent;}
+    #wrap main .product .left_bottom_right .swiper_product {width:100%; position:relative; left:0; top:0;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap {display:flex; flex-flow:row wrap;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide {height:200px; width:calc((100% - 15px) / 2); display:none;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide:nth-of-type(1),
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide:nth-of-type(2),
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide:nth-of-type(3),
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide:nth-of-type(4) {display:block;}
+    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide span {
+        line-height:200px; font-size:1rem;}
+    /* 5행 투자, 문의 */
+    #wrap main .customer {flex-flow:column nowrap;}
+    #wrap main .customer a {width:100%; height:350px;}
+    #wrap main .customer a .bg .border {width:280px; height:280px;}
+    #wrap main .customer a:hover .bg .border {width:300px; height:300px;}
+    #wrap main .customer .text h3 {font-size:1.25rem;}
+    #wrap main .customer .text p{font-size:0.813rem;}
+    /* footer */
+    #wrap footer {padding:50px 15px; flex-flow:column nowrap; gap:30px;}
+    #wrap footer .left .left_top a {font-size:0.813rem; margin-right:10px; margin-bottom:10px;}
+    #wrap footer .right .site {font-size:0.875rem; width:150px;}
+    #wrap footer .right .site option {font-size:0.875rem;}
+    #wrap footer .right  {flex-flow:row nowrap;}
+}

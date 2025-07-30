@@ -4,7 +4,8 @@ body {max-width:1920px;}
 #wrap main {text-align:center;}
 /* ----------------------------------------------배너 */
 #wrap main .bnr_bg {
-    background:url(../images/bnr.jpg) no-repeat center / cover; width:100%; height:963px; display:block; padding-top:420px; position:relative;}
+    background:url(../images/bnr.jpg) no-repeat center / cover; width:100%; height:963px; display:block; position:relative;}
+#wrap main .bnr_bg .bnr_text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
 #wrap main .bnr_bg p:first-child {color:#fff; font-size:2rem; font-weight:500;}
 #wrap main .bnr_bg p {color:#fff; font-size:1.125rem;}
 #wrap main .bnr_bg h1 {
@@ -35,11 +36,11 @@ body {max-width:1920px;}
 #wrap main .key_features a h2 img {width:24px; position:absolute; bottom:0;}
 #wrap main .key_features .swiper_key_features {}
 #wrap main .key_features .swiper_key_features .slide_wrap {}
-#wrap main .key_features .swiper_key_features .slide_wrap .slide {width:400px; display:flex; flex-flow:column nowrap;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide {width:400px; display:flex; flex-flow:column nowrap; align-items:center;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide img {
     width:100%; height:400px; object-fit:contain;}
-#wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px;}
-#wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px; line-height:130%;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem; width:max-content;}
 /* ==========================================================3행 글로벌 */
 #wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0; margin:80px 0;}
 #wrap main .global_network a {position:relative;}
@@ -81,13 +82,14 @@ body {max-width:1920px;}
 #wrap main .customer {display:flex;}
 #wrap main .customer a {width:calc(100% / 2); height:800px;}
 #wrap main .customer a .bg {width:100%; height:100%; position:relative;}
+#wrap main .customer a .bg .border { width:450px; height:450px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); border:5px solid #fff;}
 #wrap main .customer .investment {background:url(../images/customer001.jpg)no-repeat center / cover;}
 #wrap main .customer .customer_inquiry {background:url(../images/customer002.jpg)no-repeat center / cover;}
 #wrap main .customer a:hover .bg {background-color:rgba(0,0,0,0.4);}
-#wrap main .customer .text {border:5px solid #fff; padding:169px 0; width:450px; height:450px;  position:absolute;top:50%; left:50%; transform:translate(-50%, -50%);}
-#wrap main .customer a:hover .text {width:470px; height:470px;}
+#wrap main .customer .bg .border .text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+#wrap main .customer a:hover .bg .border {width:470px; height:470px;}
 #wrap main .customer .text h3 {color:#fff; font-size:1.75rem; font-weight:500; margin-bottom:30px;}
-#wrap main .customer .text p {color:#fff; font-size:1.125rem; line-height:150%;}
+#wrap main .customer .text p {color:#fff; font-size:1.125rem; line-height:150%; width:max-content;}
 
 
 @keyframes scroll_ani {
@@ -95,50 +97,3 @@ body {max-width:1920px;}
     100% {bottom:80px;}
 }
 
-/* 반응형 */
-@media screen and (max-width:1249px) {
-    /* header */
-    #wrap header {padding:0 80px;}
-    #wrap header .header_bg nav {display:none;}
-    #wrap header .header_bg .lang_and_mobile_wrap .lang_btn {height:24px;}
-    #wrap header .header_bg .lang_and_mobile_wrap .mobile_btn {display:block;}
-    /* 배너 */
-    #wrap main .bnr_bg {height:80vh; padding-top:350px;}
-    #wrap main .bnr_bg h1 {font-size:3.375rem; margin:7px 0 15px;}
-    #wrap main .bnr_bg p:first-child {font-size:1.5rem;}
-    #wrap main .bnr_bg p {font-size:1rem;}
-    #wrap main .bnr_bg em {display:none;}
-    /* 1행 일상 */
-    #wrap main .daily_life {padding:60px 80px;}
-    #wrap main .daily_life h2 {font-size:1.5rem;}
-    #wrap main .daily_life p {font-size:0.938rem;}
-    #wrap main .daily_life .life_container .life_contain {height:450px;}
-    /* 2행 기능 */
-    #wrap main .key_features {padding:60px 0;}
-    #wrap main .key_features a h2 {font-size:1.5rem; margin-bottom:30px;}
-    #wrap main .key_features .swiper_key_features .slide_wrap .slide img {height:250px;}
-    #wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.125rem;}
-    #wrap main .key_features .swiper_key_features .slide_wrap .slide span {font-size:0.813rem;}
-    /* 3행 글로벌 */
-    #wrap main .global_network {height:500px; padding:200px 0;}
-    /* 4행 제품 */
-    #wrap main .product {padding-left:80px; margin:90px 0 180px;}
-    #wrap main .product .product_left {text-align:center;}
-    #wrap main .product .left_bottom_right {display:flex; flex-flow:column nowrap; gap:100px;}
-    #wrap main .product .left_bottom_right p {
-        padding:20px; width:calc(100vw - 160px); text-align:right; height:400px;}
-    #wrap main .product .left_bottom_right .prev_btn {right:70px; top:43px;}
-    #wrap main .product .left_bottom_right .next_btn {right:20px; top:43px;}
-    #wrap main .product .left_bottom_right .swiper_product {width:calc(100vw - 160px); /* position:relative; */ left:-65px; bottom:-80px;}
-    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide {height:350px;}
-    #wrap main .product .left_bottom_right .swiper_product .slide_wrap .slide span {
-        line-height:350px; font-size:1.25rem;}
-    /* 5행 투자, 문의 */
-    #wrap main .customer a {height:550px;}
-    #wrap main .customer .text {width:350px; height:350px; padding:130px 0;}
-    #wrap main .customer a:hover .text {width:370px; height:370px;}
-    #wrap main .customer .text h3 {font-size:1.5rem;}
-    #wrap main .customer .text p{font-size:1rem;}
-    /* footer */
-    #wrap footer {padding:60px 80px;}
-}
