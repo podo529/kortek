@@ -15,7 +15,7 @@
 #wrap header .header_bg nav .gnb li > a {color:#fff;}
 #wrap header .header_bg nav .gnb li .lnb_depth {
     /* display:flex; flex-flow:column nowrap; gap:13px; */ padding:50px 0 30px;
-    position:absolute; left:50%; transform:translateX(-50%); width:120px; top:15px;
+    position:absolute; left:50%; transform:translateX(-50%); width:130px; top:15px;
     display:none; color:#fff; background:linear-gradient(0deg,rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
 }
 #wrap header .header_bg nav .gnb li .lnb_depth li {}

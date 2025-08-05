@@ -15,7 +15,7 @@ lifeContainer.forEach((obj,idx)=>{
                 };
                 for(let i of lifeSpan){i.style.display = 'none';};
             });
-            lifeBg[idx].style.backgroundColor = 'transparent';
+            lifeBg[idx].style.backgroundColor = 'rgba(255,255,255,0.2)';
             lifeSpan[idx].style.display = 'inline';
         }else{
             lifeContainer.forEach((life)=>{
@@ -26,7 +26,7 @@ lifeContainer.forEach((obj,idx)=>{
                 for(let i of lifeSpan){i.style.display = 'none';};
                 life.style.width = 'calc((100% - 30px) / 7)';
             });
-            lifeBg[idx].style.backgroundColor = 'transparent';
+            lifeBg[idx].style.backgroundColor = 'rgba(255,255,255,0.2)';
             lifeSpan[idx].style.display = 'inline';
             obj.style.width = 'calc(((100% - 30px) / 7) * 4)';
         }
@@ -37,7 +37,7 @@ window.addEventListener('resize', () => {
         lifeBg[idx].style.backgroundColor = 'rgba(0,0,0,0.7)';
         lifeBg[idx].style.borderRadius = '5px';
         lifeSpan[idx].style.display = 'none';
-        lifeBg[0].style.backgroundColor = 'transparent';
+        lifeBg[0].style.backgroundColor = 'rgba(255,255,255,0.2)';
         lifeSpan[0].style.display = 'inline';
         if (window.innerWidth <= 849) {
             obj.style.width = '100%';
@@ -59,8 +59,7 @@ window.addEventListener('resize', () => {
 const keySwiper = new Swiper('.swiper_key_features', {
     // 공통 설정
     autoplay: {
-        delay: 1000,
-        /* disableOnInteraction: true, */
+        delay: 2500,
     },
     loop: true,
     direction: 'horizontal',
@@ -70,15 +69,15 @@ const keySwiper = new Swiper('.swiper_key_features', {
     breakpoints: {
         1400:{
             slidesPerView: 4.5,
-            spaceBetween: 60
+            spaceBetween: 80,
         },
         849: {
             slidesPerView: 3.5,
-            spaceBetween: 60
+            spaceBetween: 90,
         },
         320: {
             slidesPerView: 2.5,
-            spaceBetween: 60
+            spaceBetween: 70,
         }
     }
 });

@@ -13,7 +13,6 @@ const mobileGnbBtn = document.querySelectorAll('.gnb_btn img');
 const mobileLnb = document.querySelectorAll('.mobile_lnb_depth');
 const menuWrap = document.querySelector('.mobile_menu_wrap');
 
-
 //header 스크롤
 window.addEventListener('scroll',()=>{
     if(window.scrollY > 100){

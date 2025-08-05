@@ -7,12 +7,12 @@ body {max-width:1920px;}
     background:url(../images/bnr.jpg) no-repeat center / cover; width:100%; height:963px; display:block; position:relative;}
 #wrap main .bnr_bg .bnr_text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
 #wrap main .bnr_bg p:first-child {color:#fff; font-size:2rem; font-weight:500;}
-#wrap main .bnr_bg p {color:#fff; font-size:1.125rem;}
+#wrap main .bnr_bg p {color:#fff; font-size:1.125rem; text-shadow:0px 0px 3px rgba(0,0,0,0.7);}
 #wrap main .bnr_bg h1 {
     font-size:5.25rem; font-family: "Racing Sans One", sans-serif;
     color:#0061B0; text-shadow:2px 2px 0 #fff; margin:10px 0 30px;
 }
-#wrap main .bnr_bg em {font-size:0.875rem; font-weight:600; color:#fff; position:absolute; bottom:97px; animation:scroll_ani 1.5s linear infinite alternate;}
+#wrap main .bnr_bg em {font-size:0.875rem; font-weight:600; color:#fff; position:absolute; bottom:97px; animation:scroll_ani 1.5s linear infinite alternate; border:1px solid #fff; padding:10px 15px; background-color:rgba(0,0,0,0.3); border-radius:50px;}
 /* ===================================================1행 일상 */
 #wrap main .daily_life {padding:90px 295px;}
 #wrap main .daily_life h2 {font-size:1.75rem; font-weight:500;}
@@ -21,13 +21,13 @@ body {max-width:1920px;}
 #wrap main .daily_life .life_container {display:flex; flex-flow:row nowrap; gap:10px; margin:0 auto; width:100%;}
 #wrap main .daily_life .life_container .life_contain {width:calc((100% - 30px) / 7); height:554px; border-radius:5px;}
 #wrap main .daily_life .life_container .life_bg {display:flex;flex-flow:column nowrap; justify-content:center; gap:20px; background-color:rgba(0,0,0,0.7); width:100%; height:100%;}
-#wrap main .daily_life .life_container .life_contain em {font-weight:500; font-size:1.5rem; color:#fff;}
-#wrap main .daily_life .life_container .life_contain span {color:#fff; display:none; line-height:130%;}
+#wrap main .daily_life .life_container .life_contain em {font-weight:500; font-size:1.5rem; color:#fff; text-shadow:0px 0px 4px #000;}
+#wrap main .daily_life .life_container .life_contain span {color:#fff; display:none; line-height:150%; text-shadow:0px 0px 3px #000;}
 #wrap main .daily_life .life_container .life1 {background:url(../images/life001.jpg) no-repeat center / cover; width:calc(((100% - 30px) / 7) * 4);}
 #wrap main .daily_life .life_container .life2 {background:url(../images/life002.jpg) no-repeat center / cover;}
 #wrap main .daily_life .life_container .life3 {background:url(../images/life003.png) no-repeat center / cover;}
 #wrap main .daily_life .life_container .life4 {background:url(../images/life004.jpg) no-repeat center / cover;}
-#wrap main .daily_life .life_container .life_contain.active .life_bg {background-color:transparent;}
+#wrap main .daily_life .life_container .life_contain.active .life_bg {background-color:rgba(255,255,255,0.2);}
 #wrap main .daily_life .life_container .life_contain.active .life_bg span {display:inline;}
 /* =======================================================2행 기능 */
 #wrap main .key_features {padding:90px 0;}
@@ -39,14 +39,14 @@ body {max-width:1920px;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide {width:400px; display:flex; flex-flow:column nowrap; align-items:center;}
 #wrap main .key_features .swiper_key_features .slide_wrap .slide img {
     width:100%; height:400px; object-fit:contain;}
-#wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px; line-height:130%;}
-#wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:130%; font-size:0.938rem; width:max-content;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide em {font-size:1.375rem; font-weight:500; margin:20px 0 10px; line-height:150%;}
+#wrap main .key_features .swiper_key_features .slide_wrap .slide span {line-height:150%; font-size:0.938rem; width:max-content;}
 /* ==========================================================3행 글로벌 */
 #wrap main .global_network {height:700px; background:url(../images/global.jpg) no-repeat center 40%; background-attachment:fixed; padding:279.5px 0; margin:80px 0;}
 #wrap main .global_network a {position:relative;}
-#wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500; margin-bottom:30px;}
-#wrap main .global_network a h2 img {width:24px; position:absolute; bottom:0;}
-#wrap main .global_network p {color:#fff; line-height:150%; font-size:1.125rem;}
+#wrap main .global_network a h2 {color:#fff; font-size:1.875rem; font-weight:500; margin-bottom:30px; text-shadow:0px 0px 4px rgba(0,0,0,0.7);}
+#wrap main .global_network a h2 img {width:24px; position:absolute; bottom:0; filter:drop-shadow(0 0 4px rgba(0,0,0,0.7));}
+#wrap main .global_network p {color:#fff; line-height:150%; font-size:1.125rem; text-shadow:0px 0px 4px rgba(0,0,0,0.7);}
 #wrap main .global_network p em {color:#fff; font-weight:700;}
 /* ==========================================================4행 제품 */
 #wrap main .product {padding-left:260px; margin:90px 0;}
@@ -56,13 +56,13 @@ body {max-width:1920px;}
 #wrap main .product .product_left .left_top a h2 {font-size:1.75rem; font-weight:500; position:relative;}
 #wrap main .product .product_left .left_top a h2 img {width:24px; position:absolute; bottom:0;}
 #wrap main .product .product_left .left_top span {
-    line-height:130%; margin:20px 0 50px; display:inline-block;}
+    line-height:150%; margin:20px 0 50px; display:inline-block;}
 #wrap main .product .left_bottom_right { position:relative;}
 #wrap main .product .left_bottom_right img {width:40px; height:40px; position:absolute;}
 #wrap main .product .left_bottom_right .prev_btn {left:20px; top:210px;}
 #wrap main .product .left_bottom_right .next_btn {left:70px; top:210px;}
 #wrap main .product .left_bottom_right p {
-    line-height:130%; color:#fff; background-color:#0061B0; text-align:left;
+    line-height:150%; color:#fff; background-color:#0061B0; text-align:left;
     padding:265px 20px 20px; width:659px; height:327px;
 }
 #wrap main .product .left_bottom_right .swiper_product {width:calc(100vw / 1.6); position:absolute; bottom:67px; right:0;}
@@ -82,11 +82,11 @@ body {max-width:1920px;}
 #wrap main .customer {display:flex;}
 #wrap main .customer a {width:calc(100% / 2); height:800px;}
 #wrap main .customer a .bg {width:100%; height:100%; position:relative;}
-#wrap main .customer a .bg .border { width:450px; height:450px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); border:5px solid #fff;}
+#wrap main .customer a .bg .border { width:450px; height:450px; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); border:5px solid #fff; background-color:rgba(255,255,255,0.2);}
 #wrap main .customer .investment {background:url(../images/customer001.jpg)no-repeat center / cover;}
 #wrap main .customer .customer_inquiry {background:url(../images/customer002.jpg)no-repeat center / cover;}
 #wrap main .customer a:hover .bg {background-color:rgba(0,0,0,0.4);}
-#wrap main .customer .bg .border .text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%);}
+#wrap main .customer .bg .border .text {position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); text-shadow:0px 0px 4px rgba(0,0,0,0.5);}
 #wrap main .customer a:hover .bg .border {width:470px; height:470px;}
 #wrap main .customer .text h3 {color:#fff; font-size:1.75rem; font-weight:500; margin-bottom:30px;}
 #wrap main .customer .text p {color:#fff; font-size:1.125rem; line-height:150%; width:max-content;}
