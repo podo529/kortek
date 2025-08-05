@@ -3,6 +3,16 @@ const lifeSpan = document.querySelectorAll('.life_bg span');
 const lifeContainer = document.querySelectorAll('.life_contain');
 //console.log(lifeBg)
 
+//a링크 이동 막기
+document.querySelectorAll('a').forEach(function(link) {
+    link.addEventListener('click', function(e) {
+        if (this.getAttribute('href') === '#' || this.getAttribute('href') === '') {
+            e.preventDefault();
+        }
+    });
+});
+
+
 //1행 life
 lifeContainer.forEach((obj,idx)=>{
     obj.style.transition = 'all 1s ease';
